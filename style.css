@@ -1,0 +1,231 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'PT Serif', serif; */
+
+* {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+h1, h2, h3, h4, .h1, h2, .h3{
+    font-family: 'PT Serif', serif;
+}
+
+:root{
+    --f: rgb(168, 72, 96);
+    --w: rgb(230, 230, 230);
+    --b: rgb(255, 144, 168); 
+}
+
+/* testi e backgound */
+.text-f{
+    color: var(--f) !important;
+}
+
+.text-w{
+    color: var(--w) !important;
+}
+
+.text-b{
+    color: var(--b) !important;
+}
+
+.bg-f{
+    background-color: var(--f);
+}
+
+.bg-w{
+    background-color: var(--w);
+}
+
+.bg-b{
+    background-color: var(--b);
+}
+
+.text-upper-navbar{
+    color: var(--w);
+}
+
+.text-upper-navbar:hover{
+    color: var(--b);
+}
+
+.text-navbar{
+    color: var(--f);
+}
+
+.text-navbar:hover{
+    color: var(--w);
+
+}
+
+/* navbar */
+.logo{
+    height: 50px;
+    width: 60px;
+    transition: 0.5s;
+}
+
+.navbar{
+    transition: 0,5s;
+    height: 66px;
+}
+
+#conteinerfluid{
+    transition: 0.5s;
+}
+
+.logoRotate{
+    transform: rotate(180deg);
+}
+
+.header{
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 58%, rgba(247,247,247,1) 100%), url('https://cdn.pixabay.com/photo/2018/03/02/19/46/rose-petals-3194062_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header-annunci{
+    height: 60vh;
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 58%, rgba(247,247,247,1) 100%), url('https://cdn.pixabay.com/photo/2018/03/02/19/46/rose-petals-3194062_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+h1{
+    font-weight: bold;
+    
+}
+
+.imgCards{
+    border: 5px solid var(--b);
+    padding: 10px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    height: 350px;
+    
+}
+
+.number{
+    font-weight: 700;
+    font-size: 40px;
+    display: inline-flex;
+    width: 80px;
+    justify-content: end;
+}
+
+/* swiper */
+.swiper {
+    width: 900px;
+    height: 300px;
+  }
+
+  .review-card{
+    height: 60%;
+    width: 80%;
+    border: 2px solid var(--f);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+  .color-button{
+    color: var(--f);
+  }
+
+
+/* SEZIONE ANNUNCI SU ANNUNCI.JS */
+
+/* quando non è collassato sarà così */
+.accordion-button:not(.collapsed){
+    Color: var(--w) !important;     
+    background-color: var(--b);
+}
+
+.ann-card{
+    height: 200px;
+    width: 25%;
+    border: 2px solid var(--b);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: var(--f);
+}
+  
+
+
+/* circle section */
+#circle{
+    height: 300px;
+    width: 300px;
+    border: 3px dashed var(--b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#opener{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--f);
+    transition: 0.3s;
+    position: absolute;
+    z-index: 3;
+    background-color: var(--b);
+    
+}
+
+.moved{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--f);
+    transition: 0.3s;
+    position: absolute;
+    z-index: 2;
+    background-color: var(--b);
+}
+
+.chisiamo-altezza{
+    height: 50vh;
+}
+
+/* footer */
+.logo-footer{
+    height: 70px;
+    width: 90px;
+}
+
+.link-footer{
+    text-decoration: none;
+    /* position: relative;
+    right: 30px; */
+    
+}
+
+.ul-footer{
+    list-style: none;
+    
+}
+
+hr{
+    border-width: 2px;    
+}
+
+.li-link{
+    
+}

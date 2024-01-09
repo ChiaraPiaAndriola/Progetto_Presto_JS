@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&display=swap" rel="stylesheet">
+  
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+  <body>
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-f sticky-top">
+        <div id="containerfluid" class="container-fluid bg-f">
+          <a class="navbar-brand" href="#"></a>
+            <img id="logo" class="logo" src="https://cdn.pixabay.com/photo/2016/12/07/15/15/lotus-with-hands-1889661_1280.png" alt="">
+            <i id="hamburger" class="fa-solid fa-bars 2x navbar-toggler links text-w" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" ></i>
+            
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-upper-navbar links " aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-upper-navbar links" href="./annunci.html">Annunci</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-upper-navbar links" href="./chisiamo.html">Chi siamo</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+  <div class="container-fluid mt-0">
+    <div class="row align-items-center justify-content-center text-center header-annunci">
+      <div class="col-10 col-md-6">
+        <h1 class="text-f">I Nostri Annunci</h1>
+      </div>
+    </div>
+
+<!-- SEZIONE ANNUNCI -->
+<div class="container mt-5 pt-5">
+  <div class="row">
+    <div class="col-12 col-md-2">
+      
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-f text-w" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Categoria
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div id="radioWrapper" class="accordion-body">
+              
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="categories" id="All" checked>
+                <label class="form-check-label" for="All" >
+                  Tutte le categorie
+                </label>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-f text-w" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Prezzo
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <label for="inputRange" class="form-label">Range di prezzo</label>
+              <input id="inputRange" class="w-100" type="range" class="form-range" min="0" value="50">
+              <p id="numberPrice">0</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-f text-w" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Parola
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <input type="text" class="w-100 form-control" placeholder="Cerca qui" id="wordInput">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cardsWrapper" class="col-12 col-md-10 d-flex flex-wrap justify-content-end ">
+    </div>
+  </div>
+</div>   
+
+<footer class="mt-5 py-5 bg-f ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
+        <img id="logo" class="logo-footer" src="https://cdn.pixabay.com/photo/2016/12/07/15/15/lotus-with-hands-1889661_1280.png" alt="">
+      </div>
+      <div class="col-3 ">
+        <h4 class="text-w my-3">Servizi</h4>
+        <ul class="ul-footer position-relative nav flex-column">
+          <li class="li-link nav-item">
+            <a class="text-w link-footer " href="">Matrimoni</a>
+          </li>
+          <li class="li-link nav-item py-2">
+            <a class="text-w link-footer " href="">Fiori a domicilio</a>
+          </li>
+    
+        </ul>
+      </div>
+      <div class="col-12 col-md-3 ">
+        <h4 class="text-w my-3">Info</h4>
+        <ul class="ul-footer position-relative nav flex-column">
+          <li class="li-link nav-item">
+            <a class="text-w link-footer " href=""><i class="fa-solid fa-phone text-w"></i> Contattaci</a>
+          </li>
+          <li class="li-link nav-item my-2">
+            <a class="text-w link-footer " href="">Lavora con noi</a>
+          </li>
+          <li class="li-link nav-item my-1">
+            <a class="text-w link-footer " href="">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-3 ">
+        <h4 class="text-w my-3">Spedizioni</h4>
+        <ul class="ul-footer position-relative nav flex-column">
+          <li class="li-link nav-item">
+            <a class="text-w link-footer " href="">Cambi</a>
+          </li>
+          <li class="li-link nav-item my-2">
+            <a class="text-w link-footer " href="">Resi</a>
+          </li>
+          <li class="li-link nav-item my-1">
+            <a class="text-w link-footer " href="">Spedizione</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 d-flex justify-content-center">
+    <hr class="text-w w-75">
+  </div>
+  <div class="container-fluid">
+    <div class="row ">
+      <div class=" col-12 text-center ">
+        <i class="fa-brands fa-instagram fa-2x text-w px-4"></i>
+        <i class="fa-brands fa-facebook fa-2x text-w px-4"></i>
+        <i class="fa-brands fa-whatsapp fa-2x text-w px-4"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/52a7532e0a.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- javascript -->
+    <script src="./annunci.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+[
+    {
+        "id":1,
+        "name": "Girasoli",
+        "category": "Fiori",
+        "price": "35"
+    },
+
+    {
+        "id":2,
+        "name": "Rose",
+        "category": "Fiori",
+        "price": "26.50"
+    },
+
+    {
+        "id":3,
+        "name": "Tulipani",
+        "category": "Fiori",
+        "price": "20.40"
+    },
+
+    {
+        "id":4,
+        "name": "Cactus",
+        "category": "Piante Grasse",
+        "price": "23.20"
+    },
+
+    {
+        "id":5,
+        "name": "Aloe Vera",
+        "category": "Piante Grasse",
+        "price": "20"
+    },
+
+    {
+        "id":6,
+        "name": "Senecio",
+        "category": "Piante Grasse",
+        "price": "21"
+    },
+
+    {
+        "id":7,
+        "name": "Orchidea",
+        "category": "Semi",
+        "price": "15"
+    },
+
+    {
+        "id":9,
+        "name": "Papavero",
+        "category": "Semi",
+        "price": "11"
+    },
+
+    {
+        "id":10,
+        "name": "Begonia",
+        "category": "Semi",
+        "price": "12.50"
+    }, 
+
+    {
+        "id":7,
+        "name": "Bonsai",
+        "category": "In vaso",
+        "price": "45"
+    },
+
+    {
+        "id":9,
+        "name": "Mandarino",
+        "category": "In vaso",
+        "price": "60"
+    },
+
+    {
+        "id":10,
+        "name": "Strelitzia",
+        "category": "In vaso",
+        "price": "40"
+    }
+
+]    
